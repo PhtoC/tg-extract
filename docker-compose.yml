@@ -1,0 +1,8 @@
+services:
+  tg-extract:
+    build: .
+    container_name: tg-extract
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data

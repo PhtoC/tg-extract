@@ -1,0 +1,13 @@
+[project]
+name = "telegram-extract"
+version = "1.0.0"
+description = "Telegram 媒体提取 bot：贴链接，拿原图原视频原文件"
+requires-python = ">=3.10"
+dependencies = [
+    "telethon>=1.36.0",
+    "qrcode>=7.4",
+    "pyzipper>=0.4.0",
+]
+
+[tool.uv]
+package = false

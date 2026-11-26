@@ -1,0 +1,17 @@
+[Unit]
+Description=Telegram media extract bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tg-extract
+EnvironmentFile=/opt/tg-extract/.env
+ExecStart=/opt/tg-extract/.venv/bin/python -u -m tgextract.bot
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

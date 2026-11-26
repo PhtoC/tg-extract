@@ -1,0 +1,8 @@
+.venv/
+data/
+.env
+__pycache__/
+*.pyc
+deploy/sessions.txt
+deploy/oracle_key
+deploy/env.server
